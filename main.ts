@@ -1,4 +1,30 @@
 input.onButtonPressed(Button.A, function () {
+    basic.showString("y=mx+b")
+})
+input.onGesture(Gesture.ScreenUp, function () {
+    for (let index = 0; index < 4; index++) {
+        basic.showString("t",5)
+basic.showString("m",5)
+basic.showString("s",5)
+    }
+    letter = randint(1, 3)
+    if (letter == 1) {
+        basic.showString("m")
+    } else if (letter == 2) {
+        basic.showString("t")
+    } else if (letter == 3) {
+        basic.showString("s")
+    }
+})
+input.onButtonPressed(Button.AB, function () {
+    music.playMelody("B A G A G F A C5 ", 120)
+    music.playMelody("G B A G C5 B A B ", 120)
+})
+input.onButtonPressed(Button.B, function () {
+    music.setVolume(255)
+    music.playMelody("C - - C - - C - ", 120)
+})
+input.onGesture(Gesture.Shake, function () {
     basic.showLeds(`
         # . # # #
         # . # . .
@@ -65,22 +91,12 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(1000)
     basic.showNumber(1)
     basic.pause(1000)
-    music.playTone(262, music.beat(BeatFraction.Breve))
-})
-input.onGesture(Gesture.ScreenUp, function () {
-	
-})
-input.onButtonPressed(Button.AB, function () {
-    music.playMelody("B A G A G F A C5 ", 120)
-    music.playMelody("G B A G C5 B A B ", 120)
-})
-input.onButtonPressed(Button.B, function () {
-    music.setVolume(255)
-    music.playMelody("C - - C - - C - ", 120)
+    music.playTone(523, music.beat(BeatFraction.Breve))
 })
 input.onGesture(Gesture.LogoDown, function () {
     basic.showNumber(6)
 })
+let letter = 0
 basic.showLeds(`
     . . . . .
     . # . # .
