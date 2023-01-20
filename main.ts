@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showString("y2-y1/x2-x1")
+    basic.showString("y=mx+b")
 })
 input.onButtonPressed(Button.AB, function () {
     music.playMelody("B A G A G F A C5 ", 120)
