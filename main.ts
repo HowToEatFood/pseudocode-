@@ -2,7 +2,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("y=mx+b")
 })
 input.onGesture(Gesture.ScreenUp, function () {
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 10; index++) {
         basic.showString("t",5)
 basic.showString("m",5)
 basic.showString("s",5)
