@@ -93,8 +93,8 @@ input.onGesture(Gesture.Shake, function () {
     basic.pause(1000)
     music.playTone(523, music.beat(BeatFraction.Breve))
 })
-input.onGesture(Gesture.LogoDown, function () {
-    basic.showNumber(6)
+input.onGesture(Gesture.TiltRight, function () {
+    basic.showNumber(0)
 })
 let letter = 0
 basic.showLeds(`
