@@ -25,6 +25,9 @@ input.onButtonPressed(Button.B, function () {
     music.playMelody("C - - C - - C - ", 120)
 })
 input.onGesture(Gesture.Shake, function () {
+    basic.showString("DONT FORGET HOMEWORK")
+})
+input.onGesture(Gesture.TiltRight, function () {
     basic.showLeds(`
         # . # # #
         # . # . .
@@ -92,9 +95,6 @@ input.onGesture(Gesture.Shake, function () {
     basic.showNumber(1)
     basic.pause(1000)
     music.playTone(523, music.beat(BeatFraction.Breve))
-})
-input.onGesture(Gesture.TiltRight, function () {
-    basic.showNumber(6)
 })
 let letter = 0
 basic.showLeds(`
