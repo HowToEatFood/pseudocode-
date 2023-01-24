@@ -25,7 +25,7 @@ input.onButtonPressed(Button.B, function () {
     music.playMelody("C - - C - - C - ", 120)
 })
 input.onGesture(Gesture.Shake, function () {
-    basic.showString("DONT FORGET HOMEWORK")
+    basic.showString("DONT FORGET HOMEWORK", 100)
 })
 input.onGesture(Gesture.TiltRight, function () {
     basic.showLeds(`
